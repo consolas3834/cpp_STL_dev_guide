@@ -2,9 +2,14 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
+
+//#include "vector_base.h"
+#include "vector_advanced.h"
+
 void main()
 {
+	/*********************vector exp3-3************************/
+	//push_back()  size()  capacity()  reserve()  resize()
 	vector<string>myvt;
 	myvt.reserve(4);
 	cout << "The size is 4." << endl;
@@ -19,8 +24,9 @@ void main()
 	{
 		cout << *it << endl;
 	}
-	int m = myvt.size();
-	int n = myvt.capacity();
+
+	int m = myvt.size();		//size()
+	int n = myvt.capacity();	//capacity()
 	int m1 = myvt.max_size();
 	cout << "vector:myvt, size is " << m << endl;
 	cout << "vector:myvt, capacity is " << n << endl;
@@ -37,5 +43,20 @@ void main()
 			cout << "******" << endl;
 		cout << *it << endl;
 	}
+
+	/****************************exp3-4****************************/
+	//empty()  pop_back()  at()  iterator
+//	vector_base_test();
+
+	/****************************exp3-5****************************/
+	//for_each  count_if
+//	vertor_algo_test();
+
+	/****************************exp3-6****************************/
+	vertor_find();
+	
+	/****************************exp3-7****************************/
+	vector_sort();
+
 	cin.get();
 }
